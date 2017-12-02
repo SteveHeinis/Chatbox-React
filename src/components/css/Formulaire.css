@@ -1,0 +1,40 @@
+.form {
+	align-self: flex-end;
+}
+
+.form > * {
+	width: 100%;
+}
+
+textarea {
+	box-sizing: border-box;
+	height: 120px;
+	border: 5px solid #2196F3;
+	border-width: 0 0 5px 0;
+	background-color: #ECEFF1;
+	outline: none;
+	font-size: 20px;
+	padding: 5px 10px;
+}
+
+.info {
+	text-align: right;
+	padding-right: 5px;
+}
+
+button {
+	font-size: 20px;
+	border: none;
+	color: white;
+	background-color: #2196F3;
+	margin-top: 10px;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 2px;
+}
+
+button:disabled {
+	background-color: #eceff1;
+	cursor:not-allowed;
+	color: white;
+}

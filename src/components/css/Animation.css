@@ -1,0 +1,27 @@
+/* Enter = phase de transition avant que le message soit réellement chargé */
+
+.message-enter {
+	opacity: 0;
+	/* Y = haut en bas, X = gauche à droite. Ici, on le décalle de 100% vers le bas */
+	transform: translateY(100%);
+	transition: all 0.2s;
+}
+
+/* Une fois que le message est arrivé, qu'il est actif, on lui donne son opacité et on le met à la bonne position */
+.message-enter-active {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Pour les messages qui disparaissent c'est l'inverse */
+
+.message-leave {
+	opacity: 1s;
+	transform: translateY(0);
+	transition: all 0.2s;
+}
+
+.message-leave-active {
+	opacity: 0;
+	transform: translateY(-100%);
+}
